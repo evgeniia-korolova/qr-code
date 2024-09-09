@@ -25,12 +25,11 @@ const QrCodeScanner = () => {
     console.log(scanned)
     return (
         <div className={s.container}>
-            <h1>scanner</h1>
-            <QrReader
+                <QrReader
                 constraints={{ facingMode: 'environment' }}
                 scanDelay={1000}
                 onResult={scanHandler}
-                containerStyle={{ width: '500px' }}
+                containerStyle={{ width: '400px' }}
             />            
 
             <p className={s.result}>{scanned}</p>   
